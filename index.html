@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Geometry Calculators</title>
+    <script src="./src/triangleAreaCalculator.js"></script>
+    <script src="./src/trianglePerimeterCalculator.js"></script>
+    <script src="./src/circleCalculator.js"></script>
+    <script src="./util/index.js"></script>
+    <link rel="stylesheet" href="./util/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Geometry Calculators</h1>
+    </header>
+    <div class="calculatorContainer">
+      <div class="container">
+        <div class="card">
+          <h3>Triangle Area Calculator</h3>
+          <div class="cardContent">
+            <div class="calculatorForm">
+              <div class="referenceImage">
+                <img
+                  src="./util/SVG/triangleArea.svg"
+                  alt="Diagram of Area of Triangle"
+                />
+              </div>
+              <form>
+                <div class="formGroup">
+                  <label for="lengthInput">Base</label>
+                  <input type="number" name="lengthInput" id="lengthInput" />
+                </div>
+                <div class="formGroup">
+                  <label for="heightInput">Height</label>
+                  <input type="number" name="heightInput" id="heightInput" />
+                </div>
+                <div>
+                  <button onClick="handleTriangleCalculatorSubmit(event)">
+                    Submit
+                  </button>
+                </div>
+              </form>
+            </div>
+            <div class="calculatorResult">
+              <p id="triangleAreaResult">The area of your triangle is ___</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Circle Area Calculator</h3>
+          <div class="cardContent">
+            <div class="calculatorForm">
+              <div class="referenceImage">
+                <img
+                  src="./util/SVG/circleArea.svg"
+                  alt="Diagram of Area of Circle"
+                />
+              </div>
+              <form>
+                <div class="formGroup">
+                  <label for="radiusInput">Radius</label>
+                  <input type="number" name="radiusInput" id="radiusInput" />
+                </div>
+                <div>
+                  <button onClick="handleCircleCalculatorSubmit(event)">
+                    Submit
+                  </button>
+                </div>
+              </form>
+            </div>
+            <div class="calculatorResult">
+              <p id="circleAreaResult">The area of your circle is ___</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Triangle Perimeter Calculator</h3>
+          <div class="cardContent">
+            <div class="calculatorForm">
+              <div class="referenceImage">
+                <img
+                  src="./util/SVG/trianglePerimeter.svg"
+                  alt="Diagram for Perimeter of a Triangle"
+                  width="300px"
+                />
+              </div>
+              <form>
+                <div class="formGroup">
+                  <label for="trianglePerimeterSideOneInput">Side One</label>
+                  <input
+                    type="number"
+                    name="trianglePerimeterSideOneInput"
+                    id="trianglePerimeterSideOneInput"
+                  />
+                </div>
+                <div class="formGroup">
+                  <label for="trianglePerimeterSideTwoInput">Side Two</label>
+                  <input
+                    type="number"
+                    name="trianglePerimeterSideTwoInput"
+                    id="trianglePerimeterSideTwoInput"
+                  />
+                </div>
+                <div class="formGroup">
+                  <label for="trianglePerimeterSideThreeInput"
+                    >Side Three</label
+                  >
+                  <input
+                    type="number"
+                    name="trianglePerimeterSideThreeInput"
+                    id="trianglePerimeterSideThreeInput"
+                  />
+                </div>
+                <div>
+                  <button
+                    onClick="handleTrianglePerimeterCalculatorSubmit(event)"
+                  >
+                    Submit
+                  </button>
+                </div>
+              </form>
+            </div>
+            <div class="calculatorResult">
+              <p id="trianglePerimeterResult">
+                The perimeter of your triangle is ___
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

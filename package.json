@@ -1,0 +1,23 @@
+{
+  "name": "sei",
+  "version": "1.0.0",
+  "description": "You are an intern at a math education company. Your team is developing a series of geometry calculators that run in a browser. Your fellow intern has written a draft of these calculators, but their manager has rejected their pull request for a combination of code style and logical errors.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/benjaminwgordon/SEI_IntroJS_Exercises.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/benjaminwgordon/SEI_IntroJS_Exercises/issues"
+  },
+  "homepage": "https://github.com/benjaminwgordon/SEI_IntroJS_Exercises#readme",
+  "devDependencies": {
+    "jest": "^29.3.1"
+  },
+  "type": "commonjs"
+}
